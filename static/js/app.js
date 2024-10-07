@@ -59,9 +59,9 @@ function buildCharts(sample) {
     var bubbleData = [bubbleTrace];
 
     var bubbleLayout = {
-      title: 'Bubble Chart of OTUs',
-      xaxis: { title: 'OTU IDs' },
-      yaxis: { title: 'Sample Values' },
+      title: 'Bacteria Cultures Per Sample',
+      xaxis: { title: 'OTU ID' },
+      yaxis: { title: 'Number of Bacteria' },
       showlegend: false
     };
 
@@ -86,9 +86,8 @@ function buildCharts(sample) {
     var barData = [barTrace];
 
     var barLayout = {
-      title: 'Top 10 OTUs',
-      xaxis: { title: 'Sample Values' },
-      yaxis: { title: 'OTU IDs' }
+      title: 'Top 10 Bacteria Cultures Found',
+      xaxis: { title: 'Number of Bacteria' },
     };
 
     // Render the Bar Chart
